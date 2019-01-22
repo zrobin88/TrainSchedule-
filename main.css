@@ -1,0 +1,19 @@
+.anton{
+
+font-family: 'Anton', sans-serif;
+}
+
+.righteous{
+    font-family: 'Righteous', cursive;
+}
+
+.russo{
+    font-family: 'Russo One', sans-serif;
+}
+
+.coolColor{
+    background-image: linear-gradient(#174817, #d0d0d0);
+}
+.coolColor2{
+    background-image: linear-gradient(#7f807f, #a1f385);;
+}

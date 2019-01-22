@@ -1,0 +1,92 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>So Many Trains So Little Time</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Righteous|Russo+One" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
+</head>
+
+<body class = "coolColor">
+    <main class="container">
+            <div class="jumbotron jumbotron-fluid coolColor2 rounded">
+                    <div class="container">
+                      <h1 class="display-4 text-center russo">Train Schedule</h1>
+                      
+                    </div>
+                  </div>
+            
+    <div class="row">
+
+        <div class="col-md-12">
+  
+        
+          <div class="card mb-4 coolColor2 rounded">
+            <div class="card-header russo">So many trains so little time....</div>
+            <div class="card-body">
+              <table class="table table-sm table-hover" id='train-table'>
+                <thead>
+                  <tr>
+                    <th scope="col">Train Name</th>
+                    <th scope="col">Destination</th>
+                    <th scope="col">Frequency (min)</th>
+                    <th scope="col">Next Arrival</th>
+                    <th scope="col">Minutes Away</th>
+                   
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+       
+        
+
+            <div class = "card">
+                
+               
+            <form class = "mb-3 coolColor2">
+                <h1 class ="russo text-center">Add Train</h1>
+                <div class="form-group bg">
+                    <label for="exampleInputName"> Train Name</label>
+                    <input type="name" class="form-control" id="train-name-input" 
+                        placeholder="Name">
+
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputDestination"> Destination</label>
+                    <input type="Role" class="form-control" id="destination" placeholder="Destination">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputTime"> First Train Time (HH:mm)</label>
+                    <input type="time" class="form-control" id="train-time" placeholder="Train-TIme">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputFreq"> Frequency</label>
+                    <input type="number" class="form-control" id="frequency-input" placeholder="Frequency">
+                </div>
+                <button type="submit" class="btn btn-success" id ="submit">Submit</button>
+            </form>
+
+        </div>
+
+            </form>
+       
+        </div>
+
+    </main>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
